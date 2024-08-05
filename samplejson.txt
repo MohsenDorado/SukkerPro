@@ -1,0 +1,95 @@
+feature===== 
+{id: 1858380, status: 0, status_name: 'Notstarted', status_period: null, pitch: null, …}
+aggregate_id
+: 
+null
+assistants
+: 
+{first_assistant_id: null, second_assistant_id: null, fourth_assistant_id: null}
+attendance
+: 
+null
+coverage
+: 
+{has_lineups: 0, has_tvs: 1, has_standings: 0}
+deleted
+: 
+"0"
+group_id
+: 
+"9451"
+group_name
+: 
+"Bundesliga 24/25"
+id
+: 
+1858380
+info
+: 
+null
+league
+: 
+{id: 1005, name: 'Tipico Bundesliga', type: '', country_id: '15', country_name: 'Austria', …}
+leg
+: 
+null
+pitch
+: 
+null
+referee_id
+: 
+null
+round_id
+: 
+"184065"
+round_name
+: 
+"3"
+scores
+: 
+{home_score: '', away_score: '', ht_score: null, ft_score: null, et_score: null, …}
+season_id
+: 
+"14418"
+season_name
+: 
+"24/25"
+stage_id
+: 
+"1"
+stage_name
+: 
+"Regular Season"
+standings
+: 
+{home_position: 0, away_position: 0}
+status
+: 
+0
+status_name
+: 
+"Notstarted"
+status_period
+: 
+null
+teams
+: 
+{home: {…}, away: {…}}
+time
+: 
+{datetime: '2024-08-17 15:00:00', date: '2024-08-17', time: '15:00:00', minute: '', timestamp: 1723906800, …}
+venue_id
+: 
+"4569"
+weather_report
+: 
+null
+week
+: 
+"33"
+winner_team_id
+: 
+null
+[[Prototype]]
+: 
+Object
