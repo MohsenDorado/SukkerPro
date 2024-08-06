@@ -1,4 +1,3 @@
-import TestCard from '@/components/TestCard'
 import React from 'react'
 
 const page = () => {
