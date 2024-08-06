@@ -5,12 +5,12 @@ import MobileImg from "@/public/peakpx.jpg"
 import { GiSoccerBall } from 'react-icons/gi'
 const Hero = () => {
   return (
-    <div className='w-full h-[850px] bg-black max-sm:h-[650px]'>
+    <div className='w-full h-[880px] bg-black max-xl:h-[650px] '>
         <Image
-        className='w-full h-full z-10 opacity-40 top-0 fixed max-sm:h-[100%] max-md:hidden '
+        className='w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] max-md:hidden select-none '
         src={FootballImg}  alt='Hero Image'/>
          <Image
-        className='w-full h-full z-10 opacity-40 top-0 fixed max-sm:h-[100%] md:hidden '
+        className='w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] md:hidden select-none '
         src={MobileImg}  alt='Hero Image'/>
         <div className=' flex items-center justify-center w-full h-full  px-10'>
             
@@ -19,7 +19,7 @@ const Hero = () => {
             <p className='text-7xl font-extrabold font-Pacifico text-white max-sm:text-5xl'>
                 We are Sukker Pro
             </p>
-            <p className='py-5 text-white font-Pacifico text-xl max-sm:text-lg'>
+            <p className='py-5 text-white font-Pacifico text-xl max-sm:text-lg lg:max-w-[50%]'>
                 Sukker Pro is an absolute beast of a website to access every single one of the football data... or maybe some people can call it soccer... 
             </p>
             <button 
