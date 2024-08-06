@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import getRandomPassedMatches from "@/actions/getRandomPassedMatches";
 import Upcoming from "@/components/Home/Upcoming";
 import Hero from "@/components/Home/Hero";
 import Header from "@/components/Header/Header";
+import getAllLeagues from "@/actions/getAllLeagues";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const allData= await getRandomPassedMatches();
+  const leagues=await getAllLeagues();
+  console.log("all of out leaguessssssssssssss",leagues);
+  
 
 
   return (
@@ -29,12 +31,7 @@ export default async function RootLayout({
 
         
         {children}
-        <div className="flex flex-col w-full">
-
-        <Header/>
-        <Hero/>
-        <Upcoming data={allData}/>
-        </div>
+      
         
         
         </body>

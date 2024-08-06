@@ -1,14 +1,38 @@
+const getRandomPassedMatches = async () => {
+    const User= process.env.USER;
+    const Token= process.env.TOKEN;
 
-const getRandomPassedMatches =async () => {
 
-    const User=(process.env.USER);
-    const Token=(process.env.TOKEN)
-    const res=await fetch( `https://api.soccersapi.com/v2.2/fixtures/?user=${User}&token=${Token}&t=schedule&d=2023-06-04`);
-    const data=await res.json();
-    const allData=data.data;
+    const date = new Date();
+
+    let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+let SomePassed:any=[];
+  
+  
+for (let i = 0; i <4; i++) {
     
-    return allData;
- 
+    try {
+      let res =
+        await fetch(`https://api.soccersapi.com/v2.2/fixtures/?user=${User}&token=${Token}&t=schedule&d=${year}-${month}-${day-i}`);
+        let data=await res.json();
+            if (data.data) {
+                console.log(`data in here is ***********************************${i}`,data.data);
+                
+                
+                SomePassed.push(data.data)
+            }
+    } catch (error) {
+      return [];
+  
+  
+    }
+    
 }
-
-export default getRandomPassedMatches
+console.log("this is after forrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",SomePassed);
+return await SomePassed.map((data:any)=>data);
+  };
+  
+  export default getRandomPassedMatches;

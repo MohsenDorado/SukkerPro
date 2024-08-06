@@ -11,7 +11,6 @@ const MatchCard = ({
  
   const [matchData, setMatchData] = useState<any>([]);
 
-  console.log("this is match dataaaaaaaaaaaaaaaaaaaaaa", matchData);
 
   const months = [
     { name: "January", id: "01" },
@@ -58,11 +57,13 @@ console.log("this is id",data);
                 className="w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] "
               />
             </div>
-            <div hidden={!!matchData} className="text-center">
+            <div hidden={!!data.scores.home_score} className="text-center">
               <p>{data.time.time?.substring(0, data.time.time.length - 3)}</p>
             </div>
             {data.scores.home_score!=='' && (
-              <div className="flex items-center text-xl justify-between gap-4 lg:text-4xl md:text-2xl">
+              <div
+              
+              className="flex items-center text-xl justify-between gap-4 lg:text-4xl md:text-2xl">
                 <p>{data?.scores?.home_score}</p>
                 <p>-</p>
                 <p>{data?.scores?.away_score}</p>
