@@ -12,7 +12,7 @@ let year = date.getFullYear();
 let SomePassed:any=[];
   
   
-for (let i = 0; i <4; i++) {
+for (let i = 0; i <10; i++) {
     
     try {
       let res =
