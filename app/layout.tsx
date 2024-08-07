@@ -5,6 +5,7 @@ import Upcoming from "@/components/Home/Upcoming";
 import Hero from "@/components/Home/Hero";
 import Header from "@/components/Header/Header";
 import getAllLeagues from "@/actions/getAllLeagues";
+import MobileFooter from "@/components/Footer/MobileFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default async function RootLayout({
 
         
         {children}
+        <MobileFooter/>
       
         
         
