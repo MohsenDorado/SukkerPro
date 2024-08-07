@@ -5,7 +5,7 @@ import MobileImg from "@/public/peakpx.jpg"
 import { GiSoccerBall } from 'react-icons/gi'
 const Hero = () => {
   return (
-    <div className='w-full h-[880px] bg-black max-xl:h-[650px] '>
+    <div className='w-full h-[100dvh] bg-black max-xl:h-[100dvh] '>
         <Image
         className='w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] max-md:hidden select-none '
         src={FootballImg}  alt='Hero Image'/>
