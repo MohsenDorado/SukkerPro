@@ -19,7 +19,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const leagues=await getAllLeagues();
-  console.log("all of out leaguessssssssssssss",leagues);
+  // console.log("all of out leaguessssssssssssss",leagues);
   
 
 

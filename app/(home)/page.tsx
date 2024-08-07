@@ -16,12 +16,14 @@ export default async function Home() {
 
   })
   
-console.log("these are are passedddddddddddddddddddddddddddddddddddddddd",passedMatches);
-let passedmatchesdata;
-passedMatches.map((data:any)=>{
-  passedmatchesdata=data;
-})
-
+  let passedmatchesdata:any=[];
+  passedMatches.map((data:any)=>{
+      data.map((object:any)=>{
+        passedmatchesdata.push(object);
+      })
+  })
+  
+  console.log("these are are passedddddddddddddddddddddddddddddddddddddddd",passedmatchesdata);
 
   return (
     <div className="flex flex-col w-full">

@@ -12,14 +12,14 @@ let year = date.getFullYear();
 let SomePassed:any=[];
   
   
-for (let i = 0; i <4; i++) {
+for (let i = 0; i <10; i++) {
     
     try {
       let res =
         await fetch(`https://api.soccersapi.com/v2.2/fixtures/?user=${User}&token=${Token}&t=schedule&d=${year}-${month}-${day-i}`);
         let data=await res.json();
             if (data.data) {
-                console.log(`data in here is ***********************************${i}`,data.data);
+                // console.log(`data in here is ***********************************${i}`,data.data);
                 
                 
                 SomePassed.push(data.data)
@@ -31,7 +31,7 @@ for (let i = 0; i <4; i++) {
     }
     
 }
-console.log("this is after forrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",SomePassed);
+// console.log("this is after forrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",SomePassed);
 return await SomePassed.map((data:any)=>data);
   };
   
