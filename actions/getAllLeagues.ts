@@ -9,7 +9,8 @@ const getAllLeagues = async () => {
       await fetch(`https://api.soccersapi.com/v2.2/leagues/?user=${User}&token=${Token}&t=list`);
       const data=await res.json();
       // console.log("dataof leagueeeeeeeeeeeeeee",data);
-      return data;
+      // console.log("this is all leagues server.............",data);
+      return data.data;
       
 
   } catch (error) {
@@ -17,5 +18,6 @@ const getAllLeagues = async () => {
 
 
   }
+  
 };
 export default getAllLeagues;

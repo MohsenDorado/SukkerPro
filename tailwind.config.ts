@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily:{
-        'Pacifico':[ "Pacifico", "cursive"],
+        'Pacifico':[ "Pacifico"],
+         "Barlow Condensed":[ "Barlow Condensed","sans-serif"],
+
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

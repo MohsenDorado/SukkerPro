@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Upcoming from "@/components/Home/Upcoming";
-import Hero from "@/components/Home/Hero";
+
 import Header from "@/components/Header/Header";
 import getAllLeagues from "@/actions/getAllLeagues";
 import MobileFooter from "@/components/Footer/MobileFooter";
@@ -19,24 +18,18 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const leagues=await getAllLeagues();
+  const leagues = await getAllLeagues();
   // console.log("all of out leaguessssssssssssss",leagues);
-  
-
 
   return (
     <html lang="en">
       <body className={inter.className}>
-   
 
+        <Header />
 
-        
         {children}
-        <MobileFooter/>
-      
-        
-        
-        </body>
+        <MobileFooter />
+      </body>
     </html>
   );
 }

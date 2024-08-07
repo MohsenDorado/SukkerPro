@@ -7,19 +7,19 @@ const Hero = () => {
   return (
     <div className='w-full h-[100dvh] bg-black max-xl:h-[100dvh] '>
         <Image
-        className='w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] max-md:hidden select-none '
+        className='transition-all duration-500 w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] max-md:hidden select-none '
         src={FootballImg}  alt='Hero Image'/>
          <Image
-        className='w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] md:hidden select-none '
+        className='transition-all duration-500 w-full h-full z-10 opacity-30 top-0 fixed max-sm:h-[100%] md:hidden select-none '
         src={MobileImg}  alt='Hero Image'/>
         <div className=' flex items-center justify-center w-full h-full  px-10'>
             
 
         <div className=' flex flex-col items-center text-center justify-center  z-20 '>
-            <p className='text-7xl font-extrabold font-Pacifico text-white max-sm:text-5xl'>
+            <p className='text-7xl font-extrabold font-Barlow Condensed text-white max-sm:text-5xl'>
                 We are Sukker Pro
             </p>
-            <p className='py-5 text-white font-Pacifico text-xl max-sm:text-lg lg:max-w-[50%]'>
+            <p className='py-5 text-white font-Barlow Condensed text-xl max-sm:text-lg lg:max-w-[50%]'>
                 Sukker Pro is an absolute beast of a website to access every single one of the football data... or maybe some people can call it soccer... 
             </p>
             <button 

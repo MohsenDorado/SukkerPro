@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react'
 interface MobileItemProps {
+  label :string;
     href: string;
     icon: any;
     active?: boolean;
@@ -9,6 +10,7 @@ interface MobileItemProps {
   }
   
 const MobileItems: React.FC<MobileItemProps> = ({ 
+  label,
     href, 
     icon: Icon, 
     active,
@@ -21,7 +23,9 @@ const MobileItems: React.FC<MobileItemProps> = ({
       href={href} 
       className={clsx(`
         group 
+        items-center
         flex 
+        flex-col
         gap-x-3 
         text-sm 
         leading-6 
@@ -36,6 +40,7 @@ const MobileItems: React.FC<MobileItemProps> = ({
         active && 'bg-gray-100 text-black',
       )}>
       <Icon className="h-6 w-6" />
+      {label}
     </Link>  )
 }
 

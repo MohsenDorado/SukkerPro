@@ -23,7 +23,7 @@ export default async function Home() {
       })
   })
   
-  console.log("these are are passedddddddddddddddddddddddddddddddddddddddd",passedmatchesdata);
+  // console.log("these are are passedddddddddddddddddddddddddddddddddddddddd",passedmatchesdata);
 
   return (
     <div className="flex flex-col w-full">
@@ -31,7 +31,6 @@ export default async function Home() {
       
       <div className="flex flex-col w-full">
 
-        <Header/>
         <Hero/>
         <Upcoming data={alldata}/>
         <PastFixtures data={passedmatchesdata}/>
